@@ -4,7 +4,7 @@
  */
 
 module.exports = {
-    '@tags': ['dev'],
+    //'@tags': ['dev'],
 
     'Open Training Page 1 About Page and verify content' : function (browser) {
         TPAbout = browser.page.trainingPages.trainingPage1AboutPage()
