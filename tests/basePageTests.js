@@ -8,7 +8,6 @@ module.exports = {
   
   'Navigate to the Magneic Automation Home Page verify the base page content' : function (browser) {
     base = browser.page.basePage()
-    home = browser.page.homePage()
     base.navigate()
       .verifyHeadingAndFooter('Automation Test Site')
       .verifyNavBarText()
@@ -16,7 +15,7 @@ module.exports = {
     },
 
     
-  'demo test google' : function (client) {
+  'Verify Home Page Content' : function (client) {
     homepage = new client.page.homePage()
     homepage.navigate()
       .isLoaded()

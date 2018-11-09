@@ -21,39 +21,10 @@ const config = {
         "log_path": "./logs",
         "port": 4444,
         "cli_args": {
-            "webdriver.chrome.driver": "./node_modules/chromedriver/lib/chromedriver/chromedriver.exe",
-            "webdriver.gecko.driver": "./lib/geckodriver_020.exe",
-            "webdriver.ie.driver": "./lib/IEDriverServer.exe",
-            "webdriver.ie.driver.loglevel": "TRACE",
-            "webdriver.ie.driver.logfile": "./logs/iedriver.log",
-            "webdriver.edge.driver": "./lib/MicrosoftWebDriver.exe",
-            "webdriver.firefox.logfile": "./logs/gecko.log"
+            "webdriver.chrome.driver": "./node_modules/chromedriver/lib/chromedriver/chromedriver.exe"
         }
     },
     "test_settings": {
-        "default": {
-            "launch_url": "",
-            "selenium_host": "ondemand.saucelabs.com",
-            "selenium_port": 4444,
-            "username": sauce_username,
-            "access_key": sauce_access_key,
-            "use_ssl": false,
-            "silent": true,
-            "output": true,
-            "screenshots": {
-                "enabled": false,
-                "on_failure": true,
-                "path": "./screenshots"
-            },
-            "desiredCapabilities": {
-                "name": "RepairClinic_automation_nightwatch",
-                "javascriptEnabled": true,
-                "acceptSslCerts": true
-            },
-            "selenium": {
-                "start_process": false
-            }
-        },
         "localchrome": {
             "launch_url": "http://magenicautomation.azurewebsites.net",
             
